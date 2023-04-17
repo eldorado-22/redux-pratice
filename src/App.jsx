@@ -1,16 +1,16 @@
 import './App.css';
 import {useDispatch, useSelector} from "react-redux";
-import 'flowbite';
 
 function App() {
 
     const dispatch = useDispatch()
-    const cash = useSelector(state => state.cash)
+    const cash = useSelector(state => state.cash.cash)
     console.log(cash)
 
     const addCash = (cash) => {
         dispatch({type: "ADD_CASH", payload: cash})
     }
+
    const getCash = (cash) => {
         dispatch({type: "GET_CASH", payload: cash})
     }
