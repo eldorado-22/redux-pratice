@@ -1,6 +1,7 @@
-const defaultState = {
+const defaultSate = {
     customer: [],
 }
+
 
 export const customerReducer = (state = defaultSate, action) => {
     switch (action.type) {
